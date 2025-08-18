@@ -543,7 +543,7 @@ Step-by-step process for different types of decisions...`}
       </section>
 
       {/* Templates Section */}
-      <section className="py-20 px-4 bg-muted/30">
+      <section id="templates" className="py-20 px-4 bg-muted/30">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <Badge variant="default" className="mb-4 text-white">Ready-to-Use Templates</Badge>
@@ -679,9 +679,11 @@ Step-by-step process for different types of decisions...`}
               <Github className="mr-2 h-5 w-5" />
               Create GOVERNANCE.md
             </Button>
-            <Button size="lg" variant="outline" className="text-lg px-8">
-              <FileText className="mr-2 h-5 w-5" />
-              Download Template
+            <Button size="lg" variant="outline" className="text-lg px-8" asChild>
+              <a href="#templates" className="no-underline">
+                <FileText className="mr-2 h-5 w-5" />
+                Download Template
+              </a>
             </Button>
           </div>
         </div>
