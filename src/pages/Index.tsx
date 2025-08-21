@@ -92,13 +92,17 @@ Contact: john@email.com`;
             structure, and trust to your open source projects.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" variant="secondary" className="text-lg px-8">
-              <BookOpen className="mr-2 h-5 w-5" />
-              Start Learning
+            <Button size="lg" variant="secondary" className="text-lg px-8" asChild>
+              <a href="#how-to" className="no-underline">
+                <BookOpen className="mr-2 h-5 w-5" />
+                Start Learning
+              </a>
             </Button>
-            <Button size="lg" variant="outline" className="text-lg px-8 border-white text-white bg-white/10 hover:bg-white/20">
-              <FileText className="mr-2 h-5 w-5" />
-              View Examples
+            <Button size="lg" variant="outline" className="text-lg px-8 border-white text-white bg-white/10 hover:bg-white/20" asChild>
+              <a href="#examples" className="no-underline">
+                <FileText className="mr-2 h-5 w-5" />
+                View Examples
+              </a>
             </Button>
           </div>
         </div>
@@ -325,7 +329,7 @@ Contact: john@email.com`;
       </section>
 
       {/* How Section - The Main Focus */}
-      <section className="py-20 px-4">
+      <section id="how-to" className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <Badge variant="default" className="mb-4 text-white">How - The Implementation</Badge>
@@ -483,7 +487,7 @@ Step-by-step process for different types of decisions...`}
       </section>
 
       {/* Examples Section */}
-      <section className="py-20 px-4 bg-muted/30">
+      <section id="examples" className="py-20 px-4 bg-muted/30">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-6">Good vs Bad Examples</h2>
@@ -679,9 +683,11 @@ Step-by-step process for different types of decisions...`}
             Start building trust and clarity in your open source project today
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="text-lg px-8">
-              <GitBranch className="mr-2 h-5 w-5" />
-              Create GOVERNANCE.md
+            <Button size="lg" className="text-lg px-8" asChild>
+              <a href="#templates" className="no-underline">
+                <GitBranch className="mr-2 h-5 w-5" />
+                Create GOVERNANCE.md
+              </a>
             </Button>
             <Button size="lg" variant="outline" className="text-lg px-8" asChild>
               <a href="#templates" className="no-underline">
