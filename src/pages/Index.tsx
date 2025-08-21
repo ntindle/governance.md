@@ -554,7 +554,7 @@ Step-by-step process for different types of decisions...`}
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <Card className="bg-gradient-card border-border/50 shadow-elegant hover:shadow-lg transition-all duration-smooth group">
+            <Card className="bg-gradient-card border-border/50 shadow-elegant hover:shadow-lg transition-all duration-smooth group flex flex-col h-full">
               <CardHeader className="text-center pb-4">
                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
                   <Users className="h-8 w-8 text-primary" />
@@ -562,14 +562,14 @@ Step-by-step process for different types of decisions...`}
                 <CardTitle className="text-xl">Solo Developer</CardTitle>
                 <p className="text-muted-foreground text-sm">Perfect for personal projects and single maintainer repositories</p>
               </CardHeader>
-              <CardContent className="pt-0">
-                <ul className="text-sm text-muted-foreground space-y-2 mb-6">
+              <CardContent className="pt-0 flex flex-col flex-grow">
+                <ul className="text-sm text-muted-foreground space-y-2 mb-6 flex-grow">
                   <li>• Simple decision-making process</li>
                   <li>• Community contribution guidelines</li>
                   <li>• Personal availability and contact info</li>
                   <li>• Project goals and priorities</li>
                 </ul>
-                <Button asChild className="w-full">
+                <Button asChild className="w-full mt-auto">
                   <a href="/templates/governance-solo-developer.md" download="GOVERNANCE.md">
                     <FileText className="mr-2 h-4 w-4" />
                     Download Template
@@ -578,7 +578,7 @@ Step-by-step process for different types of decisions...`}
               </CardContent>
             </Card>
 
-            <Card className="bg-gradient-card border-border/50 shadow-elegant hover:shadow-lg transition-all duration-smooth group">
+            <Card className="bg-gradient-card border-border/50 shadow-elegant hover:shadow-lg transition-all duration-smooth group flex flex-col h-full">
               <CardHeader className="text-center pb-4">
                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
                   <Users className="h-8 w-8 text-primary" />
@@ -586,14 +586,14 @@ Step-by-step process for different types of decisions...`}
                 <CardTitle className="text-xl">Two-Person Team</CardTitle>
                 <p className="text-muted-foreground text-sm">Ideal for co-founder or partner development teams</p>
               </CardHeader>
-              <CardContent className="pt-0">
-                <ul className="text-sm text-muted-foreground space-y-2 mb-6">
+              <CardContent className="pt-0 flex flex-col flex-grow">
+                <ul className="text-sm text-muted-foreground space-y-2 mb-6 flex-grow">
                   <li>• Consensus-based decisions</li>
                   <li>• Role division and expertise areas</li>
                   <li>• Conflict resolution process</li>
                   <li>• Shared responsibilities framework</li>
                 </ul>
-                <Button asChild className="w-full">
+                <Button asChild className="w-full mt-auto">
                   <a href="/templates/governance-two-person-team.md" download="GOVERNANCE.md">
                     <FileText className="mr-2 h-4 w-4" />
                     Download Template
@@ -602,7 +602,7 @@ Step-by-step process for different types of decisions...`}
               </CardContent>
             </Card>
 
-            <Card className="bg-gradient-card border-border/50 shadow-elegant hover:shadow-lg transition-all duration-smooth group">
+            <Card className="bg-gradient-card border-border/50 shadow-elegant hover:shadow-lg transition-all duration-smooth group flex flex-col h-full">
               <CardHeader className="text-center pb-4">
                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
                   <Users className="h-8 w-8 text-primary" />
@@ -610,14 +610,14 @@ Step-by-step process for different types of decisions...`}
                 <CardTitle className="text-xl">Small Team</CardTitle>
                 <p className="text-muted-foreground text-sm">Great for 3-5 maintainer teams with defined roles</p>
               </CardHeader>
-              <CardContent className="pt-0">
-                <ul className="text-sm text-muted-foreground space-y-2 mb-6">
+              <CardContent className="pt-0 flex flex-col flex-grow">
+                <ul className="text-sm text-muted-foreground space-y-2 mb-6 flex-grow">
                   <li>• Structured team roles</li>
                   <li>• Majority voting system</li>
                   <li>• Regular meeting schedules</li>
                   <li>• Contributor advancement path</li>
                 </ul>
-                <Button asChild className="w-full">
+                <Button asChild className="w-full mt-auto">
                   <a href="/templates/governance-small-team.md" download="GOVERNANCE.md">
                     <FileText className="mr-2 h-4 w-4" />
                     Download Template
@@ -626,7 +626,7 @@ Step-by-step process for different types of decisions...`}
               </CardContent>
             </Card>
 
-            <Card className="bg-gradient-card border-border/50 shadow-elegant hover:shadow-lg transition-all duration-smooth group">
+            <Card className="bg-gradient-card border-border/50 shadow-elegant hover:shadow-lg transition-all duration-smooth group flex flex-col h-full">
               <CardHeader className="text-center pb-4">
                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
                   <Users className="h-8 w-8 text-primary" />
@@ -634,14 +634,14 @@ Step-by-step process for different types of decisions...`}
                 <CardTitle className="text-xl">Large Organization</CardTitle>
                 <p className="text-muted-foreground text-sm">For projects with 10+ maintainers and working groups</p>
               </CardHeader>
-              <CardContent className="pt-0">
-                <ul className="text-sm text-muted-foreground space-y-2 mb-6">
+              <CardContent className="pt-0 flex flex-col flex-grow">
+                <ul className="text-sm text-muted-foreground space-y-2 mb-6 flex-grow">
                   <li>• Steering committee structure</li>
                   <li>• Working group organization</li>
                   <li>• Formal decision processes</li>
                   <li>• Enterprise-grade procedures</li>
                 </ul>
-                <Button asChild className="w-full">
+                <Button asChild className="w-full mt-auto">
                   <a href="/templates/governance-large-team.md" download="GOVERNANCE.md">
                     <FileText className="mr-2 h-4 w-4" />
                     Download Template
