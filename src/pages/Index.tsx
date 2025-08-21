@@ -92,7 +92,7 @@ Contact: john@email.com`;
               <BookOpen className="mr-2 h-5 w-5" />
               Start Learning
             </Button>
-            <Button size="lg" variant="outline" className="text-lg px-8 border-white/30 text-white hover:bg-white/10">
+            <Button size="lg" variant="outline" className="text-lg px-8 border-white text-white bg-white/10 hover:bg-white/20">
               <FileText className="mr-2 h-5 w-5" />
               View Examples
             </Button>
