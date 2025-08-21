@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { CodeBlock } from "@/components/CodeBlock";
 import { FeatureCard } from "@/components/FeatureCard";
+import { LogoTerminal } from "@/components/Logo";
 import { 
   FileText, 
   Users, 
@@ -75,12 +76,15 @@ Contact: john@email.com`;
       <section className="relative py-20 px-4 bg-gradient-hero text-white overflow-hidden">
         <div className="absolute inset-0 bg-black/10"></div>
         <div className="relative max-w-6xl mx-auto text-center">
+          <div className="mb-8 flex justify-center">
+            <LogoTerminal width={280} height={50} className="text-white" />
+          </div>
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/20 rounded-full text-sm font-medium mb-8">
             <GitBranch className="h-4 w-4" />
             Best Practices
           </div>
           <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-            Master Governance.md for
+            Master Governance Documentation for
             <span className="block text-white/90">Your Open Source Projects</span>
           </h1>
           <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
