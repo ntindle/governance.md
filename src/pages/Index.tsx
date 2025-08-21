@@ -10,7 +10,7 @@ import {
   MapPin, 
   HelpCircle, 
   Settings, 
-  Github, 
+  GitBranch, 
   BookOpen,
   Shield,
   CheckCircle,
@@ -76,12 +76,12 @@ Contact: john@email.com`;
         <div className="absolute inset-0 bg-black/10"></div>
         <div className="relative max-w-6xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/20 rounded-full text-sm font-medium mb-8">
-            <Github className="h-4 w-4" />
-            GitHub Best Practices
+            <GitBranch className="h-4 w-4" />
+            Best Practices
           </div>
           <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
             Master Governance.md for
-            <span className="block text-white/90">Your GitHub Projects</span>
+            <span className="block text-white/90">Your Open Source Projects</span>
           </h1>
           <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
             Learn the 5Ws and How of creating effective governance files that bring clarity, 
@@ -93,7 +93,7 @@ Contact: john@email.com`;
               Start Learning
             </Button>
             <Button size="lg" variant="outline" className="text-lg px-8 border-white/30 text-white hover:bg-white/10">
-              <Github className="mr-2 h-5 w-5" />
+              <FileText className="mr-2 h-5 w-5" />
               View Examples
             </Button>
           </div>
@@ -236,7 +236,7 @@ Contact: john@email.com`;
                   <h4 className="font-semibold">Discussion Venues</h4>
                   <div className="space-y-2 text-sm">
                     <div className="flex items-center gap-2">
-                      <Github className="h-4 w-4 text-primary" />
+                      <GitBranch className="h-4 w-4 text-primary" />
                       <span>GitHub Issues & Discussions</span>
                     </div>
                     <div className="flex items-center gap-2">
@@ -676,7 +676,7 @@ Step-by-step process for different types of decisions...`}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="text-lg px-8">
-              <Github className="mr-2 h-5 w-5" />
+              <GitBranch className="mr-2 h-5 w-5" />
               Create GOVERNANCE.md
             </Button>
             <Button size="lg" variant="outline" className="text-lg px-8" asChild>
