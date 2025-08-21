@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { CodeBlock } from "@/components/CodeBlock";
 import { FeatureCard } from "@/components/FeatureCard";
-import { LogoTerminal } from "@/components/Logo";
+import { LogoModern } from "@/components/Logo";
 import { 
   FileText, 
   Users, 
@@ -77,7 +77,7 @@ Contact: john@email.com`;
         <div className="absolute inset-0 bg-black/10"></div>
         <div className="relative max-w-6xl mx-auto text-center">
           <div className="mb-8 flex justify-center">
-            <LogoTerminal width={280} height={50} className="text-white" />
+            <LogoModern width={280} height={50} className="text-white" />
           </div>
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/20 rounded-full text-sm font-medium mb-8">
             <GitBranch className="h-4 w-4" />

@@ -6,20 +6,12 @@
     </linearGradient>
   </defs>
   
-  <!-- Background -->
-  <rect width="32" height="32" rx="6" fill="#1a1a1a"/>
+  <!-- Background with gradient -->
+  <rect width="32" height="32" rx="6" fill="url(#faviconGradient)"/>
   
-  <!-- Terminal prompt -->
-  <text x="4" y="14" font-family="monospace" font-size="10" font-weight="bold" fill="#10b981">$</text>
+  <!-- Large, bold "G" that's readable at small sizes -->
+  <text x="16" y="22" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-size="18" font-weight="900" fill="white" text-anchor="middle">G</text>
   
-  <!-- Text "g.md" abbreviated -->
-  <text x="11" y="14" font-family="monospace" font-size="9" fill="#f3f4f6">g.md</text>
-  
-  <!-- Decorative line -->
-  <rect x="4" y="18" width="24" height="1" fill="url(#faviconGradient)" opacity="0.5"/>
-  
-  <!-- Small dots for decoration -->
-  <circle cx="6" cy="24" r="1" fill="url(#faviconGradient)" opacity="0.8"/>
-  <circle cx="10" cy="24" r="1" fill="url(#faviconGradient)" opacity="0.8"/>
-  <circle cx="14" cy="24" r="1" fill="url(#faviconGradient)" opacity="0.8"/>
+  <!-- Small dot for "." -->
+  <circle cx="16" cy="26" r="1.5" fill="white" opacity="0.9"/>
 </svg>

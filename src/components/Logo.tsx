@@ -65,6 +65,75 @@ export const Logo: React.FC<LogoProps> = ({
   );
 };
 
+// Modern gradient version that matches the page design
+export const LogoModern: React.FC<LogoProps> = ({ 
+  className = "", 
+  width = 280, 
+  height = 50 
+}) => {
+  return (
+    <svg
+      width={width}
+      height={height}
+      viewBox="0 0 280 50"
+      className={className}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs>
+        <linearGradient id="modernTextGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stopColor="rgba(255, 255, 255, 0.95)" />
+          <stop offset="50%" stopColor="rgba(255, 255, 255, 1)" />
+          <stop offset="100%" stopColor="rgba(255, 255, 255, 0.95)" />
+        </linearGradient>
+        <linearGradient id="modernAccentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stopColor="rgba(59, 130, 246, 0.8)" />
+          <stop offset="100%" stopColor="rgba(139, 92, 246, 0.8)" />
+        </linearGradient>
+      </defs>
+      
+      {/* Subtle background glow */}
+      <ellipse
+        cx="140"
+        cy="25"
+        rx="130"
+        ry="20"
+        fill="url(#modernAccentGradient)"
+        opacity="0.1"
+      />
+      
+      {/* Main text */}
+      <text
+        x="140"
+        y="28"
+        fontFamily="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+        fontSize="22"
+        fontWeight="700"
+        fill="url(#modernTextGradient)"
+        textAnchor="middle"
+        dominantBaseline="middle"
+        letterSpacing="-0.5px"
+      >
+        governance.md
+      </text>
+      
+      {/* Subtle accent dots */}
+      <circle cx="25" cy="25" r="1.5" fill="url(#modernTextGradient)" opacity="0.6" />
+      <circle cx="255" cy="25" r="1.5" fill="url(#modernTextGradient)" opacity="0.6" />
+      
+      {/* Small decorative line under text */}
+      <rect
+        x="90"
+        y="35"
+        width="100"
+        height="1"
+        rx="0.5"
+        fill="url(#modernTextGradient)"
+        opacity="0.3"
+      />
+    </svg>
+  );
+};
+
 // Alternative minimalist version
 export const LogoMinimal: React.FC<LogoProps> = ({ 
   className = "", 
