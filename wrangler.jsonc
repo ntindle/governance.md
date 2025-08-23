@@ -1,7 +1,14 @@
 {
   "name": "governancemd",
+  "main": "src/index.ts",
   "compatibility_date": "2025-08-21",
   "assets": {
     "directory": "./dist"
-  }
+  },
+  "routes": [
+    {
+      "pattern": "governance.md",
+      "custom_domain": true
+    }
+  ]
 }

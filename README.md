@@ -1,73 +1,124 @@
-# Welcome to your Lovable project
+# governance.md
 
-## Project info
+A modern web application for creating and managing software project governance documentation. Generate tailored governance templates based on your team size and structure.
 
-**URL**: https://lovable.dev/projects/e7595a16-95c0-4132-a17e-268c37b74f5b
+## Features
 
-## How can I edit this code?
+- 📝 Pre-built governance templates for different team sizes
+- 🎨 Clean, modern UI built with React and Tailwind CSS
+- 🚀 Fast performance with Vite and Cloudflare Workers
+- 📱 Fully responsive design
+- 🔧 Customizable templates for:
+  - Solo developers
+  - Two-person teams
+  - Small teams
+  - Large teams
 
-There are several ways of editing your application.
+## Tech Stack
 
-**Use Lovable**
+- **Frontend**: React 18, TypeScript, Tailwind CSS
+- **UI Components**: shadcn/ui
+- **Build Tool**: Vite
+- **Deployment**: Cloudflare Workers/Pages
+- **Routing**: React Router v6
+- **State Management**: TanStack Query
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/e7595a16-95c0-4132-a17e-268c37b74f5b) and start prompting.
+## Getting Started
 
-Changes made via Lovable will be committed automatically to this repo.
+### Prerequisites
 
-**Use your preferred IDE**
+- Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Installation
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+```bash
+# Clone the repository
+git clone <repository-url>
+cd governance.md
 
-Follow these steps:
+# Install dependencies
+npm install
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The application will be available at `http://localhost:8080`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Available Scripts
 
-**Use GitHub Codespaces**
+```bash
+npm run dev          # Start development server
+npm run build        # Build for production
+npm run build:dev    # Build for development mode
+npm run lint         # Run ESLint
+npm run preview      # Preview production build locally
+npm run deploy       # Deploy to Cloudflare Workers
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Project Structure
 
-## What technologies are used for this project?
+```
+governance.md/
+├── src/
+│   ├── components/     # React components
+│   │   └── ui/         # shadcn/ui components
+│   ├── pages/          # Page components
+│   ├── hooks/          # Custom React hooks
+│   ├── lib/            # Utility functions
+│   └── App.tsx         # Main application entry
+├── public/
+│   └── templates/      # Governance markdown templates
+├── dist/               # Production build output
+└── wrangler.jsonc      # Cloudflare configuration
+```
 
-This project is built with:
+## Development
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### Local Development
 
-## How can I deploy this project?
+The development server runs on port 8080 and supports hot module replacement:
 
-Simply open [Lovable](https://lovable.dev/projects/e7595a16-95c0-4132-a17e-268c37b74f5b) and click on Share -> Publish.
+```bash
+npm run dev
+```
 
-## Can I connect a custom domain to my Lovable project?
+### Building for Production
 
-Yes, you can!
+```bash
+npm run build
+```
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+This creates an optimized production build in the `dist/` directory.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+### Deployment
+
+The application is configured for deployment to Cloudflare Workers:
+
+```bash
+npm run deploy
+```
+
+This requires Wrangler to be configured with your Cloudflare account credentials.
+
+## Customization
+
+### Adding New Templates
+
+Add new governance templates to `public/templates/` as markdown files. They will be automatically available in the application.
+
+### Modifying UI Components
+
+The project uses shadcn/ui components located in `src/components/ui/`. These are fully customizable and use Tailwind CSS for styling.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+MIT License - see the [LICENSE](LICENSE) file for details
+
+## Support
+
+For questions or issues, please open an issue on GitHub.

@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { CodeBlock } from "@/components/CodeBlock";
 import { FeatureCard } from "@/components/FeatureCard";
+import { LogoModern } from "@/components/Logo";
 import { 
   FileText, 
   Users, 
@@ -10,7 +11,7 @@ import {
   MapPin, 
   HelpCircle, 
   Settings, 
-  Github, 
+  GitBranch, 
   BookOpen,
   Shield,
   CheckCircle,
@@ -75,26 +76,33 @@ Contact: john@email.com`;
       <section className="relative py-20 px-4 bg-gradient-hero text-white overflow-hidden">
         <div className="absolute inset-0 bg-black/10"></div>
         <div className="relative max-w-6xl mx-auto text-center">
+          <div className="mb-8 flex justify-center">
+            <LogoModern width={280} height={50} className="text-white" />
+          </div>
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/20 rounded-full text-sm font-medium mb-8">
-            <Github className="h-4 w-4" />
-            GitHub Best Practices
+            <GitBranch className="h-4 w-4" />
+            Best Practices
           </div>
           <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-            Master Governance.md for
-            <span className="block text-white/90">Your GitHub Projects</span>
+            Master Governance Documentation for
+            <span className="block text-white/90">Your Open Source Projects</span>
           </h1>
           <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
             Learn the 5Ws and How of creating effective governance files that bring clarity, 
             structure, and trust to your open source projects.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" variant="secondary" className="text-lg px-8">
-              <BookOpen className="mr-2 h-5 w-5" />
-              Start Learning
+            <Button size="lg" variant="secondary" className="text-lg px-8" asChild>
+              <a href="#how-to" className="no-underline">
+                <BookOpen className="mr-2 h-5 w-5" />
+                Start Learning
+              </a>
             </Button>
-            <Button size="lg" variant="outline" className="text-lg px-8 border-white/30 text-white hover:bg-white/10">
-              <Github className="mr-2 h-5 w-5" />
-              View Examples
+            <Button size="lg" variant="outline" className="text-lg px-8 border-white text-white bg-white/10 hover:bg-white/20" asChild>
+              <a href="#examples" className="no-underline">
+                <FileText className="mr-2 h-5 w-5" />
+                View Examples
+              </a>
             </Button>
           </div>
         </div>
@@ -236,7 +244,7 @@ Contact: john@email.com`;
                   <h4 className="font-semibold">Discussion Venues</h4>
                   <div className="space-y-2 text-sm">
                     <div className="flex items-center gap-2">
-                      <Github className="h-4 w-4 text-primary" />
+                      <GitBranch className="h-4 w-4 text-primary" />
                       <span>GitHub Issues & Discussions</span>
                     </div>
                     <div className="flex items-center gap-2">
@@ -321,7 +329,7 @@ Contact: john@email.com`;
       </section>
 
       {/* How Section - The Main Focus */}
-      <section className="py-20 px-4">
+      <section id="how-to" className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <Badge variant="default" className="mb-4 text-white">How - The Implementation</Badge>
@@ -479,7 +487,7 @@ Step-by-step process for different types of decisions...`}
       </section>
 
       {/* Examples Section */}
-      <section className="py-20 px-4 bg-muted/30">
+      <section id="examples" className="py-20 px-4 bg-muted/30">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-6">Good vs Bad Examples</h2>
@@ -554,7 +562,7 @@ Step-by-step process for different types of decisions...`}
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <Card className="bg-gradient-card border-border/50 shadow-elegant hover:shadow-lg transition-all duration-smooth group">
+            <Card className="bg-gradient-card border-border/50 shadow-elegant hover:shadow-lg transition-all duration-smooth group flex flex-col h-full">
               <CardHeader className="text-center pb-4">
                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
                   <Users className="h-8 w-8 text-primary" />
@@ -562,14 +570,14 @@ Step-by-step process for different types of decisions...`}
                 <CardTitle className="text-xl">Solo Developer</CardTitle>
                 <p className="text-muted-foreground text-sm">Perfect for personal projects and single maintainer repositories</p>
               </CardHeader>
-              <CardContent className="pt-0">
-                <ul className="text-sm text-muted-foreground space-y-2 mb-6">
+              <CardContent className="pt-0 flex flex-col flex-grow">
+                <ul className="text-sm text-muted-foreground space-y-2 mb-6 flex-grow">
                   <li>• Simple decision-making process</li>
                   <li>• Community contribution guidelines</li>
                   <li>• Personal availability and contact info</li>
                   <li>• Project goals and priorities</li>
                 </ul>
-                <Button asChild className="w-full">
+                <Button asChild className="w-full mt-auto">
                   <a href="/templates/governance-solo-developer.md" download="GOVERNANCE.md">
                     <FileText className="mr-2 h-4 w-4" />
                     Download Template
@@ -578,7 +586,7 @@ Step-by-step process for different types of decisions...`}
               </CardContent>
             </Card>
 
-            <Card className="bg-gradient-card border-border/50 shadow-elegant hover:shadow-lg transition-all duration-smooth group">
+            <Card className="bg-gradient-card border-border/50 shadow-elegant hover:shadow-lg transition-all duration-smooth group flex flex-col h-full">
               <CardHeader className="text-center pb-4">
                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
                   <Users className="h-8 w-8 text-primary" />
@@ -586,14 +594,14 @@ Step-by-step process for different types of decisions...`}
                 <CardTitle className="text-xl">Two-Person Team</CardTitle>
                 <p className="text-muted-foreground text-sm">Ideal for co-founder or partner development teams</p>
               </CardHeader>
-              <CardContent className="pt-0">
-                <ul className="text-sm text-muted-foreground space-y-2 mb-6">
+              <CardContent className="pt-0 flex flex-col flex-grow">
+                <ul className="text-sm text-muted-foreground space-y-2 mb-6 flex-grow">
                   <li>• Consensus-based decisions</li>
                   <li>• Role division and expertise areas</li>
                   <li>• Conflict resolution process</li>
                   <li>• Shared responsibilities framework</li>
                 </ul>
-                <Button asChild className="w-full">
+                <Button asChild className="w-full mt-auto">
                   <a href="/templates/governance-two-person-team.md" download="GOVERNANCE.md">
                     <FileText className="mr-2 h-4 w-4" />
                     Download Template
@@ -602,7 +610,7 @@ Step-by-step process for different types of decisions...`}
               </CardContent>
             </Card>
 
-            <Card className="bg-gradient-card border-border/50 shadow-elegant hover:shadow-lg transition-all duration-smooth group">
+            <Card className="bg-gradient-card border-border/50 shadow-elegant hover:shadow-lg transition-all duration-smooth group flex flex-col h-full">
               <CardHeader className="text-center pb-4">
                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
                   <Users className="h-8 w-8 text-primary" />
@@ -610,14 +618,14 @@ Step-by-step process for different types of decisions...`}
                 <CardTitle className="text-xl">Small Team</CardTitle>
                 <p className="text-muted-foreground text-sm">Great for 3-5 maintainer teams with defined roles</p>
               </CardHeader>
-              <CardContent className="pt-0">
-                <ul className="text-sm text-muted-foreground space-y-2 mb-6">
+              <CardContent className="pt-0 flex flex-col flex-grow">
+                <ul className="text-sm text-muted-foreground space-y-2 mb-6 flex-grow">
                   <li>• Structured team roles</li>
                   <li>• Majority voting system</li>
                   <li>• Regular meeting schedules</li>
                   <li>• Contributor advancement path</li>
                 </ul>
-                <Button asChild className="w-full">
+                <Button asChild className="w-full mt-auto">
                   <a href="/templates/governance-small-team.md" download="GOVERNANCE.md">
                     <FileText className="mr-2 h-4 w-4" />
                     Download Template
@@ -626,7 +634,7 @@ Step-by-step process for different types of decisions...`}
               </CardContent>
             </Card>
 
-            <Card className="bg-gradient-card border-border/50 shadow-elegant hover:shadow-lg transition-all duration-smooth group">
+            <Card className="bg-gradient-card border-border/50 shadow-elegant hover:shadow-lg transition-all duration-smooth group flex flex-col h-full">
               <CardHeader className="text-center pb-4">
                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
                   <Users className="h-8 w-8 text-primary" />
@@ -634,14 +642,14 @@ Step-by-step process for different types of decisions...`}
                 <CardTitle className="text-xl">Large Organization</CardTitle>
                 <p className="text-muted-foreground text-sm">For projects with 10+ maintainers and working groups</p>
               </CardHeader>
-              <CardContent className="pt-0">
-                <ul className="text-sm text-muted-foreground space-y-2 mb-6">
+              <CardContent className="pt-0 flex flex-col flex-grow">
+                <ul className="text-sm text-muted-foreground space-y-2 mb-6 flex-grow">
                   <li>• Steering committee structure</li>
                   <li>• Working group organization</li>
                   <li>• Formal decision processes</li>
                   <li>• Enterprise-grade procedures</li>
                 </ul>
-                <Button asChild className="w-full">
+                <Button asChild className="w-full mt-auto">
                   <a href="/templates/governance-large-team.md" download="GOVERNANCE.md">
                     <FileText className="mr-2 h-4 w-4" />
                     Download Template
@@ -675,9 +683,11 @@ Step-by-step process for different types of decisions...`}
             Start building trust and clarity in your open source project today
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="text-lg px-8">
-              <Github className="mr-2 h-5 w-5" />
-              Create GOVERNANCE.md
+            <Button size="lg" className="text-lg px-8" asChild>
+              <a href="#templates" className="no-underline">
+                <GitBranch className="mr-2 h-5 w-5" />
+                Create GOVERNANCE.md
+              </a>
             </Button>
             <Button size="lg" variant="outline" className="text-lg px-8" asChild>
               <a href="#templates" className="no-underline">
