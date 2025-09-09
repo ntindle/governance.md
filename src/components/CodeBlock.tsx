@@ -26,7 +26,7 @@ export function CodeBlock({ code, language = "markdown", filename }: CodeBlockPr
         </div>
       )}
       <div className="relative">
-        <pre className="p-4 overflow-x-auto text-sm leading-relaxed">
+        <pre className="p-4 text-sm leading-relaxed whitespace-pre-wrap break-words overflow-hidden">
           <code className="text-foreground">{code}</code>
         </pre>
         <Button
