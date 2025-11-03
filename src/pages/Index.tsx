@@ -717,7 +717,7 @@ Step-by-step process for different types of decisions...`}
                 To cite this project in your work:
               </p>
               <div className="p-4 bg-background rounded-lg border text-sm font-mono">
-                governance.md ({new Date().getFullYear()}). Retrieved from https://github.com/ntindle/governance.md
+                governance.md (2024). Retrieved from https://github.com/ntindle/governance.md
               </div>
             </div>
           </div>
