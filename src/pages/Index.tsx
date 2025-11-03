@@ -698,6 +698,53 @@ Step-by-step process for different types of decisions...`}
           </div>
         </div>
       </section>
+
+      {/* Footer with Citation */}
+      <footer className="py-12 px-4 border-t bg-muted/30">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
+            <div>
+              <div className="mb-4">
+                <LogoModern width={200} height={36} />
+              </div>
+              <p className="text-muted-foreground text-sm mb-4">
+                A comprehensive guide and template collection for creating effective governance documentation for open source projects.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-semibold mb-4">Citation</h3>
+              <p className="text-sm text-muted-foreground mb-2">
+                To cite this project in your work:
+              </p>
+              <div className="p-4 bg-background rounded-lg border text-sm font-mono">
+                governance.md ({new Date().getFullYear()}). Retrieved from https://github.com/ntindle/governance.md
+              </div>
+            </div>
+          </div>
+          <div className="pt-8 border-t text-center text-sm text-muted-foreground">
+            <p>
+              Open source project by{" "}
+              <a 
+                href="https://github.com/ntindle" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-primary hover:underline"
+              >
+                ntindle
+              </a>
+              {" "}• Licensed under the MIT License • View on{" "}
+              <a 
+                href="https://github.com/ntindle/governance.md" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-primary hover:underline"
+              >
+                GitHub
+              </a>
+            </p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };

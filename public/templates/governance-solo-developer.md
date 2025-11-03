@@ -60,4 +60,15 @@ This is an actively maintained personal project. Development priorities:
 3. [Future considerations]
 
 ---
+
+## About This Template
+
+This governance template was created using [governance.md](https://github.com/ntindle/governance.md), an open-source project providing governance documentation templates and best practices for open source projects.
+
+To cite this resource:
+```
+governance.md (2024). Retrieved from https://github.com/ntindle/governance.md
+```
+
+---
 *This governance document may evolve as the project grows. Major changes will be announced in advance.*

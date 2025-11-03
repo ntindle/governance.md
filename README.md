@@ -33,7 +33,7 @@ A modern web application for creating and managing software project governance d
 
 ```bash
 # Clone the repository
-git clone <repository-url>
+git clone https://github.com/ntindle/governance.md.git
 cd governance.md
 
 # Install dependencies

@@ -1,9 +1,17 @@
 {
   "name": "governance.md",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "license": "MIT",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ntindle/governance.md.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ntindle/governance.md/issues"
+  },
+  "homepage": "https://github.com/ntindle/governance.md#readme",
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",

@@ -280,4 +280,15 @@ For critical security or infrastructure issues:
 - **Code of Conduct**: conduct@project.org
 
 ---
+
+## About This Template
+
+This governance template was created using [governance.md](https://github.com/ntindle/governance.md), an open-source project providing governance documentation templates and best practices for open source projects.
+
+To cite this resource:
+```
+governance.md (2024). Retrieved from https://github.com/ntindle/governance.md
+```
+
+---
 *This governance structure is designed for our current scale and will be reviewed annually for effectiveness. Major changes require community RFC and steering committee approval.*

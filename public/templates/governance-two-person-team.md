@@ -104,4 +104,15 @@ We aim to respond to:
 This project follows the [Contributor Covenant](https://www.contributor-covenant.org/). Both maintainers are responsible for enforcement.
 
 ---
+
+## About This Template
+
+This governance template was created using [governance.md](https://github.com/ntindle/governance.md), an open-source project providing governance documentation templates and best practices for open source projects.
+
+To cite this resource:
+```
+governance.md (2024). Retrieved from https://github.com/ntindle/governance.md
+```
+
+---
 *This governance reflects our current two-person structure and will evolve as our team and project grow.*
