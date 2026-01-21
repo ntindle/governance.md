@@ -190,15 +190,4 @@ This project follows the [Contributor Covenant](https://www.contributor-covenant
 - **Private Matters**: [lead-maintainer-email]
 
 ---
-
-## About This Template
-
-This governance template was created using [governance.md](https://github.com/ntindle/governance.md), an open-source project providing governance documentation templates and best practices for open source projects.
-
-To cite this resource:
-```
-governance.md (2024). Retrieved from https://github.com/ntindle/governance.md
-```
-
----
 *This governance structure is designed for our current team size and will be reviewed quarterly for effectiveness and necessary adjustments.*
