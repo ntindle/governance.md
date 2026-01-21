@@ -698,6 +698,45 @@ Step-by-step process for different types of decisions...`}
           </div>
         </div>
       </section>
+
+      {/* Footer */}
+      <footer className="py-12 px-4 border-t bg-muted/30">
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-8">
+            <div className="mb-4">
+              <LogoModern width={200} height={36} />
+            </div>
+            <p className="text-muted-foreground text-sm mb-4">
+              A comprehensive guide and template collection for creating effective governance documentation for open source projects.
+            </p>
+          </div>
+          <div className="pt-8 border-t text-center text-sm text-muted-foreground">
+            <p className="mb-2">
+              Made with ❤️ •{" "}
+              <a 
+                href="https://github.com/ntindle/governance.md" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-primary hover:underline"
+              >
+                View on GitHub
+              </a>
+            </p>
+            <p>
+              Open source project by{" "}
+              <a 
+                href="https://github.com/ntindle" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-primary hover:underline"
+              >
+                ntindle
+              </a>
+              {" "}• Licensed under the MIT License
+            </p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
