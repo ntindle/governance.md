@@ -711,6 +711,17 @@ Step-by-step process for different types of decisions...`}
             </p>
           </div>
           <div className="pt-8 border-t text-center text-sm text-muted-foreground">
+            <p className="mb-2">
+              Made with ❤️ •{" "}
+              <a 
+                href="https://github.com/ntindle/governance.md" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-primary hover:underline"
+              >
+                View on GitHub
+              </a>
+            </p>
             <p>
               Open source project by{" "}
               <a 
@@ -721,15 +732,7 @@ Step-by-step process for different types of decisions...`}
               >
                 ntindle
               </a>
-              {" "}• Licensed under the MIT License • View on{" "}
-              <a 
-                href="https://github.com/ntindle/governance.md" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-primary hover:underline"
-              >
-                GitHub
-              </a>
+              {" "}• Licensed under the MIT License
             </p>
           </div>
         </div>
